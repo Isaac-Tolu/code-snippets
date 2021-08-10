@@ -7,3 +7,7 @@ class Matrix:
         return self.matrix[index - 1]
     def column(self, index):
         return list(list(zip(*self.matrix))[index - 1])
+
+    # A lesson on code readability
+    def column2(self, index):
+        return [r[index - 1] for r in self.matrix]    
